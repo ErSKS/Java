@@ -16,7 +16,7 @@ public class MySQLConnect {
     public static Connection connectDb() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cjt_db", "nepal", "Kt6tRCbCjq7PzXx9");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_db", "java", "");
             System.out.println("Database Connected Successfully !");
             return conn;
         } catch (ClassNotFoundException | SQLException e) {
